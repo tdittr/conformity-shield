@@ -1,0 +1,91 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "d57ea000-ef46-42c0-b86a-7e6b1d4431c2")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 50.8 38.735)
+		(size 36.195 31.115)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b15cbb63-0434-4f0a-85e4-7f3e94e11f27")
+		(property "Sheetname" "USB"
+			(at 50.8 38.0234 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "usb.kicad_sch"
+			(at 50.8 70.4346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "USB1{D+ D-}" bidirectional
+			(at 86.995 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "00f046ee-a72e-4649-9edc-ccf2a6e4c90e")
+		)
+		(pin "USB2{D+ D-}" bidirectional
+			(at 86.995 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "0dd6e8ce-6957-48d8-a31f-cea17236573a")
+		)
+		(pin "USB4{D+ D-}" bidirectional
+			(at 86.995 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "fba7217a-0e82-4c07-978e-3d2e34c6c33f")
+		)
+		(pin "USB3{D+ D-}" bidirectional
+			(at 86.995 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "dcc4c209-5cae-4655-926c-f22e47b1f80a")
+		)
+		(instances
+			(project "shield"
+				(path "/d57ea000-ef46-42c0-b86a-7e6b1d4431c2"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
