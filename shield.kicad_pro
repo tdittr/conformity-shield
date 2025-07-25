@@ -602,6 +602,18 @@
     [
       "b15cbb63-0434-4f0a-85e4-7f3e94e11f27",
       "USB"
+    ],
+    [
+      "fb2e97f4-c33b-4fcc-91cb-29a4dc5c2c3d",
+      "usb-port"
+    ],
+    [
+      "47b780ba-46a2-431c-9095-9b4236a14243",
+      "usb-port1"
+    ],
+    [
+      "d6c5ba4b-8b54-4882-8853-878cc3a99236",
+      "uno"
     ]
   ],
   "text_variables": {}
