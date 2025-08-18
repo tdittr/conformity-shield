@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "ProjectSpecific")(type "KiCad")(uri "${KIPRJMOD}/ProjectSpecific.pretty")(options "")(descr ""))
+)
