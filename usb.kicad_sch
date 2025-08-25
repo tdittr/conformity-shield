@@ -5559,7 +5559,7 @@
 		)
 		(uuid "fed36433-5ee2-4d55-9017-d6cf82a87033")
 	)
-	(text_box "TODO:\n- Bypass caps\n- Does RESET need a diode to avoid reset during power up?\n- Figure out fuse (blows from caps)"
+	(text_box "TODO:\n- Bypass caps\n- Figure out fuse (blows from caps)"
 		(exclude_from_sim no)
 		(at 196.215 130.175 0)
 		(size 46.355 24.765)
