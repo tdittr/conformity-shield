@@ -1,15 +1,19 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "d57ea000-ef46-42c0-b86a-7e6b1d4431c2")
 	(paper "A4")
 	(lib_symbols
 		(symbol "power:+3V3"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -81,7 +85,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -93,7 +97,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -124,12 +128,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -220,6 +229,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
@@ -763,6 +773,10 @@
 	(sheet
 		(at 134.62 59.69)
 		(size 21.59 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -792,53 +806,53 @@
 		)
 		(pin "~{EN}" input
 			(at 156.21 72.39 0)
+			(uuid "6bbca266-efc0-4257-b3ab-37df82c3c8ec")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "6bbca266-efc0-4257-b3ab-37df82c3c8ec")
 		)
 		(pin "~{FLAG}" output
 			(at 156.21 74.93 0)
+			(uuid "97f993bb-6849-448d-b209-c32f06c2d79f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "97f993bb-6849-448d-b209-c32f06c2d79f")
 		)
 		(pin "USB{D+ D-}" bidirectional
 			(at 134.62 63.5 180)
+			(uuid "244ad63a-af5e-4aef-ab14-e8e08119e920")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "244ad63a-af5e-4aef-ab14-e8e08119e920")
 		)
 		(pin "A0" input
 			(at 156.21 62.23 0)
+			(uuid "e8e02b16-f90c-4e54-965b-277fc3b8b2b8")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "e8e02b16-f90c-4e54-965b-277fc3b8b2b8")
 		)
 		(pin "I2C{SDA SCL}" bidirectional
 			(at 156.21 69.85 0)
+			(uuid "10cd598b-0d8a-486b-b7ad-b077b752f3b8")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "10cd598b-0d8a-486b-b7ad-b077b752f3b8")
 		)
 		(instances
 			(project "shield"
@@ -851,6 +865,10 @@
 	(sheet
 		(at 91.44 52.705)
 		(size 17.78 31.75)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -880,43 +898,43 @@
 		)
 		(pin "USB1{D+ D-}" bidirectional
 			(at 109.22 59.69 0)
+			(uuid "00f046ee-a72e-4649-9edc-ccf2a6e4c90e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "00f046ee-a72e-4649-9edc-ccf2a6e4c90e")
 		)
 		(pin "USB2{D+ D-}" bidirectional
 			(at 109.22 63.5 0)
+			(uuid "0dd6e8ce-6957-48d8-a31f-cea17236573a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "0dd6e8ce-6957-48d8-a31f-cea17236573a")
 		)
 		(pin "USB4{D+ D-}" bidirectional
 			(at 109.22 71.12 0)
+			(uuid "fba7217a-0e82-4c07-978e-3d2e34c6c33f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "fba7217a-0e82-4c07-978e-3d2e34c6c33f")
 		)
 		(pin "USB3{D+ D-}" bidirectional
 			(at 109.22 67.31 0)
+			(uuid "dcc4c209-5cae-4655-926c-f22e47b1f80a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "dcc4c209-5cae-4655-926c-f22e47b1f80a")
 		)
 		(instances
 			(project "shield"
@@ -929,6 +947,10 @@
 	(sheet
 		(at 135.89 133.35)
 		(size 34.29 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -958,43 +980,43 @@
 		)
 		(pin "USB{D+ D-}" bidirectional
 			(at 135.89 137.16 180)
+			(uuid "9f87da49-6fa2-468b-a377-03d939cb8ff3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "9f87da49-6fa2-468b-a377-03d939cb8ff3")
 		)
 		(pin "SWD_TESTER{SWCLK SWD}" bidirectional
 			(at 170.18 147.32 0)
+			(uuid "8043706a-d0b3-4486-bf06-ee37872dcc6e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "8043706a-d0b3-4486-bf06-ee37872dcc6e")
 		)
 		(pin "TODI" input
 			(at 170.18 144.78 0)
+			(uuid "ff41e63f-423d-4346-82f4-8244494ac958")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ff41e63f-423d-4346-82f4-8244494ac958")
 		)
 		(pin "TIDO" output
 			(at 170.18 142.24 0)
+			(uuid "6194cd17-7c9f-4e4e-a50c-471a2df2aa9f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "6194cd17-7c9f-4e4e-a50c-471a2df2aa9f")
 		)
 		(instances
 			(project "shield"
@@ -1007,6 +1029,10 @@
 	(sheet
 		(at 135.89 86.36)
 		(size 34.29 40.64)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1045,93 +1071,93 @@
 		)
 		(pin "SWD{SWCLK SWD}" bidirectional
 			(at 170.18 119.38 0)
+			(uuid "9edc86d5-5fcf-407d-861e-fcb8b6ce77cc")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "9edc86d5-5fcf-407d-861e-fcb8b6ce77cc")
 		)
 		(pin "USB{D+ D-}" bidirectional
 			(at 135.89 95.25 180)
+			(uuid "d3cbd564-5f3c-48fd-8806-19f5c9f06722")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "d3cbd564-5f3c-48fd-8806-19f5c9f06722")
 		)
 		(pin "I2C{SDA SCL}" bidirectional
 			(at 170.18 110.49 0)
+			(uuid "3ed41db4-b91a-4ad1-87e9-1e887212fb5c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "3ed41db4-b91a-4ad1-87e9-1e887212fb5c")
 		)
 		(pin "TODI" output
 			(at 170.18 121.92 0)
+			(uuid "d1933570-49e8-4332-9617-708eb05f9621")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "d1933570-49e8-4332-9617-708eb05f9621")
 		)
 		(pin "TIDO" input
 			(at 170.18 124.46 0)
+			(uuid "ddac3ba6-00fd-46bf-b5ba-f5822a528b90")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ddac3ba6-00fd-46bf-b5ba-f5822a528b90")
 		)
 		(pin "EN_USB_0" output
 			(at 170.18 96.52 0)
+			(uuid "fbee1c03-fbe4-423d-86c3-a1ac4e5880f2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "fbee1c03-fbe4-423d-86c3-a1ac4e5880f2")
 		)
 		(pin "EN_USB_1" output
 			(at 170.18 102.87 0)
+			(uuid "29c280d1-0e1d-4ba3-ade3-1a6c5e5a0882")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "29c280d1-0e1d-4ba3-ade3-1a6c5e5a0882")
 		)
 		(pin "FLAG_USB_0" input
 			(at 170.18 99.06 0)
+			(uuid "edb5e8d5-a26f-49e9-a05f-e899c8f6dc2b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "edb5e8d5-a26f-49e9-a05f-e899c8f6dc2b")
 		)
 		(pin "FLAG_USB_1" input
 			(at 170.18 105.41 0)
+			(uuid "b6c91f7f-046d-4d5e-bf11-f68ceaac8852")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "b6c91f7f-046d-4d5e-bf11-f68ceaac8852")
 		)
 		(instances
 			(project "shield"
@@ -1144,6 +1170,10 @@
 	(sheet
 		(at 134.62 36.83)
 		(size 21.59 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1173,53 +1203,53 @@
 		)
 		(pin "~{EN}" input
 			(at 156.21 46.99 0)
+			(uuid "788128eb-1029-4d13-b87a-f7e69dd21a5a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "788128eb-1029-4d13-b87a-f7e69dd21a5a")
 		)
 		(pin "~{FLAG}" output
 			(at 156.21 49.53 0)
+			(uuid "f089cc3a-d935-487e-9ab5-03bff3df2007")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "f089cc3a-d935-487e-9ab5-03bff3df2007")
 		)
 		(pin "USB{D+ D-}" bidirectional
 			(at 134.62 40.64 180)
+			(uuid "46317dc2-6637-44fb-b4ee-20cd2101b4f2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "46317dc2-6637-44fb-b4ee-20cd2101b4f2")
 		)
 		(pin "A0" input
 			(at 156.21 39.37 0)
+			(uuid "2c5c4c20-1e79-49a8-baeb-8fe2d0a1a884")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "2c5c4c20-1e79-49a8-baeb-8fe2d0a1a884")
 		)
 		(pin "I2C{SDA SCL}" bidirectional
 			(at 156.21 44.45 0)
+			(uuid "a2c0cca7-0909-43e4-be4a-b84905bdd279")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "a2c0cca7-0909-43e4-be4a-b84905bdd279")
 		)
 		(instances
 			(project "shield"
@@ -1234,4 +1264,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
