@@ -2569,6 +2569,16 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 29.21) (xy 135.89 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7cd7300b-27f2-4dd9-9ff0-993ff0d29227")
+	)
+	(wire
+		(pts
 			(xy 128.27 80.01) (xy 130.81 80.01)
 		)
 		(stroke
@@ -2576,6 +2586,16 @@
 			(type default)
 		)
 		(uuid "82e6a329-0243-43dd-93cb-c742baf6d48a")
+	)
+	(wire
+		(pts
+			(xy 135.89 19.05) (xy 135.89 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83c9ee0c-5284-4ebe-a3e5-3c8b451a2588")
 	)
 	(wire
 		(pts
@@ -3071,6 +3091,76 @@
 				)
 				(path "/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/fb2e97f4-c33b-4fcc-91cb-29a4dc5c2c3d"
 					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 135.89 19.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "310b3d6f-2ae6-4a7e-800b-6106a950f9be")
+		(property "Reference" "#PWR098"
+			(at 135.89 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 135.89 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 135.89 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 135.89 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 135.89 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a24dfe56-450f-40f3-a096-03654b5b1e2e")
+		)
+		(instances
+			(project "shield"
+				(path "/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/47b780ba-46a2-431c-9095-9b4236a14243"
+					(reference "#PWR099")
+					(unit 1)
+				)
+				(path "/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/fb2e97f4-c33b-4fcc-91cb-29a4dc5c2c3d"
+					(reference "#PWR098")
 					(unit 1)
 				)
 			)
@@ -4099,6 +4189,89 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 135.89 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b02076b1-4195-48f0-9b6b-d3c1df7acced")
+		(property "Reference" "C58"
+			(at 139.7 24.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 139.7 26.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 136.8552 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 135.89 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 135.89 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 135.89 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "112d234c-94cb-4b49-8cfa-6ca5414d07ad")
+		)
+		(pin "1"
+			(uuid "2a417a5d-a4c8-4d6b-8376-a9bb317cb4b5")
+		)
+		(instances
+			(project "shield"
+				(path "/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/47b780ba-46a2-431c-9095-9b4236a14243"
+					(reference "C59")
+					(unit 1)
+				)
+				(path "/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/fb2e97f4-c33b-4fcc-91cb-29a4dc5c2c3d"
+					(reference "C58")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 78.74 77.47 0)
 		(unit 1)
@@ -4233,6 +4406,76 @@
 				)
 				(path "/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/fb2e97f4-c33b-4fcc-91cb-29a4dc5c2c3d"
 					(reference "#PWR18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 135.89 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "deafd951-252a-4d2e-a21e-02783003405e")
+		(property "Reference" "#PWR0100"
+			(at 135.89 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 135.89 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 135.89 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 135.89 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 135.89 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a86e120a-2a1e-4e0e-9f57-e4dc5e029cd5")
+		)
+		(instances
+			(project "shield"
+				(path "/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/47b780ba-46a2-431c-9095-9b4236a14243"
+					(reference "#PWR0101")
+					(unit 1)
+				)
+				(path "/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/fb2e97f4-c33b-4fcc-91cb-29a4dc5c2c3d"
+					(reference "#PWR0100")
 					(unit 1)
 				)
 			)
