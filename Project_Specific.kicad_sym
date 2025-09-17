@@ -715,7 +715,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "RP2350_80QFN"
+	(symbol "RP2354B"
 		(pin_names
 			(offset 1.016)
 		)
@@ -730,7 +730,7 @@
 				)
 			)
 		)
-		(property "Value" "RP2350_80QFN"
+		(property "Value" "RP2354B"
 			(at 25.4 -96.52 0)
 			(effects
 				(font
@@ -765,7 +765,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "RP2350_80QFN_0_0"
+		(symbol "RP2354B_0_0"
 			(text "Raspberry Pi"
 				(at 0 5.08 0)
 				(effects
@@ -775,7 +775,7 @@
 				)
 			)
 		)
-		(symbol "RP2350_80QFN_0_1"
+		(symbol "RP2354B_0_1"
 			(rectangle
 				(start -29.21 48.26)
 				(end 34.29 -93.98)
@@ -788,8 +788,8 @@
 				)
 			)
 		)
-		(symbol "RP2350_80QFN_1_0"
-			(text "RP2350B QFN-80"
+		(symbol "RP2354B_1_1"
+			(text "RP2354B QFN-80"
 				(at 0 0 0)
 				(effects
 					(font
@@ -797,8 +797,6 @@
 					)
 				)
 			)
-		)
-		(symbol "RP2350_80QFN_1_1"
 			(pin power_in line
 				(at -31.75 39.37 0)
 				(length 2.54)

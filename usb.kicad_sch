@@ -8723,6 +8723,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C7562"
+			(at 60.96 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "8"
 			(uuid "b8200d2f-b01f-47aa-8c16-e730ec726ceb")
 		)

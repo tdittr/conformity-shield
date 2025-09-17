@@ -3363,6 +3363,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C42372555"
+			(at 245.11 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "7"
 			(uuid "dd457f8a-bcd5-45d1-a9ae-24882014666f")
 		)
@@ -3668,7 +3677,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SM03B-SRSS-TB"
+		(property "Value" "BM03B-SRSS-TB"
 			(at 246.38 45.72 0)
 			(effects
 				(font
@@ -3677,7 +3686,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_SH_BM03B-SRSS-TB_1x03-1MP_P1.00mm_Vertical"
 			(at 243.84 44.45 0)
 			(effects
 				(font
@@ -3696,6 +3705,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 243.84 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C160389"
 			(at 243.84 44.45 0)
 			(effects
 				(font
@@ -4344,7 +4362,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SM03B-SRSS-TB"
+		(property "Value" "BM03B-SRSS-TB"
 			(at 182.88 101.6 0)
 			(effects
 				(font
@@ -4353,7 +4371,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_SH_BM03B-SRSS-TB_1x03-1MP_P1.00mm_Vertical"
 			(at 180.34 100.33 0)
 			(effects
 				(font
@@ -4372,6 +4390,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 180.34 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C160389"
 			(at 180.34 100.33 0)
 			(effects
 				(font

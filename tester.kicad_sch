@@ -3225,7 +3225,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SM03B-SRSS-TB"
+		(property "Value" "BM03B-SRSS-TB"
 			(at 204.47 119.38 0)
 			(effects
 				(font
@@ -3234,7 +3234,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_SH_BM03B-SRSS-TB_1x03-1MP_P1.00mm_Vertical"
 			(at 201.93 118.11 0)
 			(effects
 				(font
@@ -3253,6 +3253,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 201.93 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C160389"
 			(at 201.93 118.11 0)
 			(effects
 				(font
