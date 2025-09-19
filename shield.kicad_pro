@@ -679,7 +679,7 @@
           "group_by": false,
           "label": "FT Rotation Offset",
           "name": "FT Rotation Offset",
-          "show": false
+          "show": true
         }
       ],
       "filter_string": "",
