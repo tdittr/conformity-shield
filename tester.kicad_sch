@@ -3191,6 +3191,15 @@
 				(hide yes)
 			)
 		)
+		(property "FT Rotation Offset" ""
+			(at 189.23 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "58078672-507e-4c01-a7a6-ebff8d540381")
 		)
@@ -3262,6 +3271,15 @@
 			)
 		)
 		(property "LCSC" "C160389"
+			(at 201.93 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Rotation Offset" "180"
 			(at 201.93 118.11 0)
 			(effects
 				(font
@@ -3419,6 +3437,15 @@
 				(hide yes)
 			)
 		)
+		(property "FT Rotation Offset" ""
+			(at 87.63 173.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d81172d1-6c37-4773-8b55-459a647efad4")
 		)
@@ -3491,6 +3518,15 @@
 			)
 		)
 		(property "LCSC" "C160404"
+			(at 201.93 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Rotation Offset" ""
 			(at 201.93 86.36 0)
 			(effects
 				(font
@@ -3660,6 +3696,15 @@
 				(hide yes)
 			)
 		)
+		(property "FT Rotation Offset" ""
+			(at 87.63 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "dc2f1abb-308a-4f36-8169-7496a180dd5b")
 		)
@@ -3737,6 +3782,15 @@
 				(hide yes)
 			)
 		)
+		(property "FT Rotation Offset" ""
+			(at 189.23 120.65 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "57d145a9-d7ae-44ca-b396-73e7947366c4")
 		)
@@ -3806,6 +3860,15 @@
 			)
 		)
 		(property "LCSC" "C25076"
+			(at 187.96 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Rotation Offset" ""
 			(at 187.96 85.09 90)
 			(effects
 				(font
@@ -3949,6 +4012,15 @@
 			)
 		)
 		(property "LCSC" "C25076"
+			(at 187.96 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Rotation Offset" ""
 			(at 187.96 87.63 90)
 			(effects
 				(font
