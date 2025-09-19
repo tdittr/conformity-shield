@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "ProjectSpecific")(type "KiCad")(uri "/home/tamme/dev/conformity-shield/ProjectSpecific.pretty")(options "")(descr ""))
+)
