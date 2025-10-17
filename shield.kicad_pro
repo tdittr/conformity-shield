@@ -72,7 +72,7 @@
           ""
         ],
         [
-          "silk_edge_clearance|32301293|84080000|6934cd34-8b06-41b1-a9af-e19f6b9a3ab1|d0143fd7-906a-447f-aaed-b3f0a691013f",
+          "silk_edge_clearance|32126010|83791953|6934cd34-8b06-41b1-a9af-e19f6b9a3ab1|d0143fd7-906a-447f-aaed-b3f0a691013f",
           ""
         ]
       ],
@@ -259,52 +259,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      [
-        "footprint_link_issues|571500|254000|9eef8b12-29d7-4d44-945e-f2bbe9eefb17|00000000-0000-0000-0000-000000000000|||",
-        ""
-      ],
-      [
-        "footprint_link_issues|635000|469900|9eef8b12-29d7-4d44-945e-f2bbe9eefb17|00000000-0000-0000-0000-000000000000|||",
-        ""
-      ],
-      [
-        "lib_symbol_mismatch|2451100|1308100|424ab43a-cb79-4b72-a1e0-470b0aa874bb|00000000-0000-0000-0000-000000000000|||",
-        ""
-      ],
-      [
-        "lib_symbol_mismatch|2451100|812800|45dab185-52ac-4219-b3c4-3ee40400bc14|00000000-0000-0000-0000-000000000000|||",
-        ""
-      ],
-      [
-        "multiple_net_names|1041400|1003300|3a75f1b7-5a9d-48a8-b43b-590f279393a1|6ae33b8e-19ec-4e26-a9ae-9c9298fcf0f3|/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/de4fc8df-fb7f-4954-9b2d-5ee66af83c26|/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/de4fc8df-fb7f-4954-9b2d-5ee66af83c26|/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/de4fc8df-fb7f-4954-9b2d-5ee66af83c26",
-        ""
-      ],
-      [
-        "multiple_net_names|1041400|927100|30037ee6-a1c5-430a-b6ad-c782dcb7c47b|d162677a-a2b8-41b1-9f29-9db1f8967d0b|/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/de4fc8df-fb7f-4954-9b2d-5ee66af83c26|/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/de4fc8df-fb7f-4954-9b2d-5ee66af83c26|/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/de4fc8df-fb7f-4954-9b2d-5ee66af83c26",
-        ""
-      ],
-      [
-        "multiple_net_names|1041400|952500|ffbfe680-3804-4007-b2b1-e2ec202659f5|92442521-2bc1-4ae3-b893-e0ac708bbcb2|/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/de4fc8df-fb7f-4954-9b2d-5ee66af83c26|/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/de4fc8df-fb7f-4954-9b2d-5ee66af83c26|/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/de4fc8df-fb7f-4954-9b2d-5ee66af83c26",
-        ""
-      ],
-      [
-        "multiple_net_names|1041400|977900|0a62cb91-ab02-42c3-bcad-4fe0d35235e2|a90b689a-f479-4208-b0b6-a23984073bf0|/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/de4fc8df-fb7f-4954-9b2d-5ee66af83c26|/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/de4fc8df-fb7f-4954-9b2d-5ee66af83c26|/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/de4fc8df-fb7f-4954-9b2d-5ee66af83c26",
-        ""
-      ],
-      [
-        "multiple_net_names|1041400|977900|178390c4-8e9a-4f95-9da6-f1612b2c5cd4|a90b689a-f479-4208-b0b6-a23984073bf0|/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/de4fc8df-fb7f-4954-9b2d-5ee66af83c26|/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/de4fc8df-fb7f-4954-9b2d-5ee66af83c26|/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/de4fc8df-fb7f-4954-9b2d-5ee66af83c26",
-        ""
-      ],
-      [
-        "multiple_net_names|1117600|571500|ffbfe680-3804-4007-b2b1-e2ec202659f5|03a40844-00cb-457a-96f9-3ff1509a4864|/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/de4fc8df-fb7f-4954-9b2d-5ee66af83c26|/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/de4fc8df-fb7f-4954-9b2d-5ee66af83c26|/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/de4fc8df-fb7f-4954-9b2d-5ee66af83c26",
-        ""
-      ],
-      [
-        "multiple_net_names|1117600|622300|3a75f1b7-5a9d-48a8-b43b-590f279393a1|0714e5fb-6a30-4992-9255-c8484cb26942|/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/de4fc8df-fb7f-4954-9b2d-5ee66af83c26|/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/de4fc8df-fb7f-4954-9b2d-5ee66af83c26|/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/de4fc8df-fb7f-4954-9b2d-5ee66af83c26",
-        ""
-      ]
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -558,7 +513,7 @@
         "wire_width": 6
       },
       {
-        "clearance": 0.2,
+        "clearance": 0.1,
         "diff_pair_gap": 0.25,
         "diff_pair_width": 0.1671,
         "microvia_diameter": 0.3,
@@ -765,6 +720,10 @@
     [
       "de4fc8df-fb7f-4954-9b2d-5ee66af83c26",
       "Tester"
+    ],
+    [
+      "82c89630-2d2f-4513-8e14-2fc2b3f89aa0",
+      "USB Mux"
     ]
   ],
   "text_variables": {}
