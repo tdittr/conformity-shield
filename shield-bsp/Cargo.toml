@@ -3,6 +3,9 @@ name = "shield-bsp"
 version = "0.1.0"
 edition = "2024"
 
+[features]
+rev1 = []
+
 [dependencies]
 cortex-m-rt = "0.7.5"
 defmt = "1.0.1"

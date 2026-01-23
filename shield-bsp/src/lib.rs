@@ -1,12 +1,19 @@
 #![no_std]
-#![expect(unused_variables, dead_code)]
+#![expect(dead_code)]
 
 use embassy_embedded_hal::shared_bus::asynch::i2c::I2cDevice;
 use embassy_rp::{
     Peri, bind_interrupts,
-    gpio::{AnyPin, Input, Level::Low, Output, Pull},
+    clocks::ClockConfig,
+    gpio::{
+        AnyPin, Input,
+        Level::{self, Low},
+        Output, Pull,
+    },
     i2c::{self, I2c},
-    peripherals::{I2C1, PIN_16, PIN_17, PIN_18, PIN_19},
+    peripherals::{I2C1, PIN_16, PIN_17, PIN_18, PIN_19, UART0, USB},
+    uart::{self, Async, Uart},
+    usb,
 };
 use embassy_sync::{blocking_mutex::raw::ThreadModeRawMutex, mutex::Mutex};
 use ina219::{
@@ -16,18 +23,22 @@ use ina219::{
 };
 use static_cell::StaticCell;
 
-use crate::pins::ShieldPins;
+use crate::peripherals::{DutPins, OtherPeripherals, split_peripherals};
 
 type SharedI2c = I2cDevice<'static, ThreadModeRawMutex, I2c<'static, I2C1, i2c::Async>>;
 type SharedI2cMutex = Mutex<ThreadModeRawMutex, I2c<'static, I2C1, i2c::Async>>;
 
-pub mod pins;
+pub mod peripherals;
 
 bind_interrupts!(
-    struct ShieldIrqs {
+    pub struct ShieldIrqs {
         I2C1_IRQ => i2c::InterruptHandler<I2C1>;
+        UART0_IRQ => uart::InterruptHandler<UART0>;
+        USBCTRL_IRQ => usb::InterruptHandler<USB>;
     }
 );
+
+pub const XOSC_HZ: u32 = 12_000_000;
 
 pub struct UsbHost {
     en: Output<'static>,
@@ -74,10 +85,9 @@ impl UsbPower {
                     .await,
                 "Could not initialize INA219 for port {}",
                 match a0 {
-                    Pin::Vcc => 0,
-                    Pin::Gnd => 1,
-                    Pin::Sda => 2,
-                    Pin::Scl => 3,
+                    Pin::Vcc => "0",
+                    Pin::Gnd => "1",
+                    _ => "oops",
                 }
             ),
         }
@@ -85,57 +95,83 @@ impl UsbPower {
 }
 
 pub struct Shield {
-    usb_power0: UsbPower,
-    usb_power1: UsbPower,
-    usb_host0: (), // Not connected
-    usb_host1: UsbHost,
+    pub usb_power0: UsbPower,
+    pub usb_power1: UsbPower,
 
-    shared_i2c: &'static SharedI2cMutex,
+    #[cfg(not(feature = "rev1"))]
+    pub usb_host1: UsbHost,
+
+    pub usb: usb::Driver<'static, USB>,
+    pub i2c: &'static SharedI2cMutex,
+    pub debugger_uart: Uart<'static, Async>,
+    pub status_led: Output<'static>,
+
+    pub dut_pins: DutPins,
+    pub other_peripherals: OtherPeripherals,
 }
 
 impl Shield {
-    pub async fn new(pins: ShieldPins, i2c: Peri<'static, I2C1>) -> Self {
-        let ShieldPins {
-            usb_host_en,
-            usb_host_sel,
-            usb_host_dp,
-            usb_host_dn,
-            usb0_en,
-            usb0_flag,
-            usb1_en,
-            usb1_flag,
-            todi,
-            tido,
-            sda,
-            scl,
-            led,
-        } = pins;
+    /// Initializes all used pins and peripherals of the shield
+    ///
+    /// # Panics
+    /// If called twice or if [`embassy_rp::init`] was called before.
+    pub async fn init() -> Self {
+        let config = embassy_rp::config::Config::new(ClockConfig::crystal(XOSC_HZ));
+        let p = embassy_rp::init(config);
+
+        let (pins, dut_pins, p, other_peripherals) = split_peripherals(p);
 
         static SHARED_I2C: StaticCell<SharedI2cMutex> = StaticCell::new();
-        let shared_i2c = SHARED_I2C.init(Mutex::new(I2c::new_async(
-            i2c,
-            scl,
-            sda,
+        let i2c = SHARED_I2C.init(Mutex::new(I2c::new_async(
+            p.I2C1,
+            pins.scl,
+            pins.sda,
             ShieldIrqs,
             Default::default(),
         )));
 
         let usb_power0 =
-            UsbPower::init(usb0_en.into(), usb0_flag.into(), shared_i2c, Pin::Vcc).await;
+            UsbPower::init(pins.usb0_en.into(), pins.usb0_flag.into(), i2c, Pin::Vcc).await;
+
         let usb_power1 =
-            UsbPower::init(usb1_en.into(), usb1_flag.into(), shared_i2c, Pin::Gnd).await;
+            UsbPower::init(pins.usb1_en.into(), pins.usb1_flag.into(), i2c, Pin::Gnd).await;
+
+        #[cfg(not(feature = "rev1"))]
+        let usb_host1 = UsbHost::new(
+            pins.usb_host_en,
+            pins.usb_host_sel,
+            pins.usb_host_dp,
+            pins.usb_host_dn,
+        );
+
+        let debugger_uart = Uart::new(
+            p.UART0,
+            pins.todi,
+            pins.tido,
+            ShieldIrqs,
+            p.DMA_CH14,
+            p.DMA_CH15,
+            Default::default(),
+        );
+
+        let status_led = Output::new(pins.led, Low);
+
+        let usb = usb::Driver::new(p.USB, ShieldIrqs);
 
         Self {
             usb_power0,
             usb_power1,
-            usb_host0: (),
-            usb_host1: UsbHost::new(usb_host_en, usb_host_sel, usb_host_dp, usb_host_dn),
 
-            shared_i2c,
+            #[cfg(not(feature = "rev1"))]
+            usb_host1,
+
+            i2c,
+            debugger_uart,
+            status_led,
+            usb,
+
+            dut_pins,
+            other_peripherals,
         }
-    }
-
-    pub fn i2c(&self) -> &'static SharedI2cMutex {
-        self.shared_i2c
     }
 }
