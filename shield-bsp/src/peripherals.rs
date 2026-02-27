@@ -1,5 +1,6 @@
 use embassy_rp::{
     Peri, Peripherals,
+    gpio::Pin,
     peripherals::{
         ADC, ADC_TEMP_SENSOR, CORE1, DMA_CH0, DMA_CH1, DMA_CH2, DMA_CH3, DMA_CH4, DMA_CH5, DMA_CH6,
         DMA_CH7, DMA_CH8, DMA_CH9, DMA_CH10, DMA_CH11, DMA_CH12, DMA_CH13, DMA_CH14, DMA_CH15,
@@ -340,4 +341,125 @@ pub fn split_peripherals(
             TRNG,
         },
     )
+}
+
+pub struct NamedPin<P: Naming>(pub P);
+
+impl<P: Naming> defmt::Format for NamedPin<P> {
+    fn format(&self, fmt: defmt::Formatter) {
+        defmt::write!(fmt, "{} (Pin {})", self.0.name(), self.0.pin())
+    }
+}
+
+#[expect(non_camel_case_types, reason = "match struct names")]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, defmt::Format)]
+pub enum PinName {
+    usb_host_en = 16,
+    usb_host_sel = 17,
+    usb_host_dp = 18,
+    usb_host_dn = 19,
+    usb0_en = 20,
+    usb0_flag = 21,
+    usb1_en = 22,
+    usb1_flag = 23,
+    todi = 28,
+    tido = 29,
+    sda = 30,
+    scl = 31,
+    led = 47,
+    d00 = 0,
+    d01 = 1,
+    d02 = 2,
+    d03 = 3,
+    d04 = 4,
+    d05 = 5,
+    d06 = 6,
+    d07 = 7,
+    d08 = 8,
+    d09 = 9,
+    d10 = 10,
+    d11 = 11,
+    d12 = 12,
+    d13 = 13,
+    d14 = 14,
+    d15 = 15,
+    d10_alt = 25,
+    d11_alt = 24,
+    d12_alt = 27,
+    d13_alt = 26,
+    a0 = 40,
+    a1 = 41,
+    a2 = 42,
+    a3 = 43,
+    a4 = 44,
+    a5 = 45,
+    a6 = 46,
+    pwm0 = 39,
+    pwm1 = 38,
+    pwm2 = 37,
+    pwm3 = 36,
+    pwm4 = 35,
+    pwm5 = 34,
+    pwm6 = 33,
+    reset = 32,
+}
+
+pub trait Naming: Pin {
+    fn name(&self) -> PinName;
+}
+
+impl<P: Pin> Naming for P {
+    fn name(&self) -> PinName {
+        match self.pin() {
+            16 => PinName::usb_host_en,
+            17 => PinName::usb_host_sel,
+            18 => PinName::usb_host_dp,
+            19 => PinName::usb_host_dn,
+            20 => PinName::usb0_en,
+            21 => PinName::usb0_flag,
+            22 => PinName::usb1_en,
+            23 => PinName::usb1_flag,
+            28 => PinName::todi,
+            29 => PinName::tido,
+            30 => PinName::sda,
+            31 => PinName::scl,
+            47 => PinName::led,
+            0 => PinName::d00,
+            1 => PinName::d01,
+            2 => PinName::d02,
+            3 => PinName::d03,
+            4 => PinName::d04,
+            5 => PinName::d05,
+            6 => PinName::d06,
+            7 => PinName::d07,
+            8 => PinName::d08,
+            9 => PinName::d09,
+            10 => PinName::d10,
+            11 => PinName::d11,
+            12 => PinName::d12,
+            13 => PinName::d13,
+            14 => PinName::d14,
+            15 => PinName::d15,
+            25 => PinName::d10_alt,
+            24 => PinName::d11_alt,
+            27 => PinName::d12_alt,
+            26 => PinName::d13_alt,
+            40 => PinName::a0,
+            41 => PinName::a1,
+            42 => PinName::a2,
+            43 => PinName::a3,
+            44 => PinName::a4,
+            45 => PinName::a5,
+            46 => PinName::a6,
+            39 => PinName::pwm0,
+            38 => PinName::pwm1,
+            37 => PinName::pwm2,
+            36 => PinName::pwm3,
+            35 => PinName::pwm4,
+            34 => PinName::pwm5,
+            33 => PinName::pwm6,
+            32 => PinName::reset,
+            _ => defmt::unreachable!(),
+        }
+    }
 }
