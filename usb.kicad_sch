@@ -4237,7 +4237,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Iset=60K/R\n = 0.4A"
+	(text "Iset=60K/R\n = 0.6A"
 		(exclude_from_sim no)
 		(at 180.848 40.386 0)
 		(effects
@@ -4246,6 +4246,12 @@
 			)
 		)
 		(uuid "a6a231cc-d788-450f-9f6a-363ed2a652e2")
+	)
+	(junction
+		(at 88.9 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "02cd36a4-84d8-4b30-9661-a0599ce4e434")
 	)
 	(junction
 		(at 251.46 113.03)
@@ -4294,6 +4300,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "42511cdb-e08b-45b5-89d6-9ab4d37e023f")
+	)
+	(junction
+		(at 88.9 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "48def1aa-38a1-4fae-aefd-dddcc0bc76e3")
 	)
 	(junction
 		(at 53.34 44.45)
@@ -4396,6 +4408,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cc53ae3a-2b97-4cde-8311-2997b2879e12")
+	)
+	(junction
+		(at 86.36 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ee3916e9-7b2e-4a17-ac85-16d63a516d63")
+	)
+	(junction
+		(at 86.36 154.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fdd92410-4ac5-48fa-9ccb-95e19650e738")
 	)
 	(no_connect
 		(at 49.53 55.88)
@@ -4549,7 +4573,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 140.97) (xy 60.96 140.97)
+			(xy 99.06 140.97) (xy 88.9 140.97)
 		)
 		(stroke
 			(width 0)
@@ -4799,6 +4823,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 157.48) (xy 91.44 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "369c0db4-4b4c-4158-b020-24e677077adb")
+	)
+	(wire
+		(pts
 			(xy 83.82 22.86) (xy 83.82 25.4)
 		)
 		(stroke
@@ -4826,6 +4860,16 @@
 			(type default)
 		)
 		(uuid "3b216335-ae2e-44f2-96a2-a408cf6444c0")
+	)
+	(wire
+		(pts
+			(xy 88.9 140.97) (xy 88.9 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c985956-8da2-4a97-bb6c-ab9a16c28cd7")
 	)
 	(wire
 		(pts
@@ -4906,6 +4950,16 @@
 			(type default)
 		)
 		(uuid "51880913-1960-4a97-b5f5-b9ca8a6f0481")
+	)
+	(wire
+		(pts
+			(xy 86.36 140.97) (xy 86.36 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "529dba62-c70d-44af-962e-a046f74ba2f5")
 	)
 	(wire
 		(pts
@@ -5097,6 +5151,16 @@
 		)
 		(uuid "60761c49-96bc-4102-9979-bb4aa4f65cda")
 	)
+	(wire
+		(pts
+			(xy 86.36 151.13) (xy 86.36 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61b4a43f-ed66-4483-995f-ba83aeec6a54")
+	)
 	(bus
 		(pts
 			(xy 176.53 85.09) (xy 179.07 85.09)
@@ -5249,6 +5313,16 @@
 	)
 	(wire
 		(pts
+			(xy 86.36 154.94) (xy 91.44 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7382def0-0c71-45a2-b893-99940de4d75e")
+	)
+	(wire
+		(pts
 			(xy 69.85 114.3) (xy 74.93 114.3)
 		)
 		(stroke
@@ -5389,6 +5463,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 140.97) (xy 86.36 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88ff1099-130a-4df3-b759-ac7641cef59b")
+	)
+	(wire
+		(pts
 			(xy 176.53 100.33) (xy 181.61 100.33)
 		)
 		(stroke
@@ -5439,7 +5523,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 154.94) (xy 91.44 154.94)
+			(xy 71.12 154.94) (xy 86.36 154.94)
 		)
 		(stroke
 			(width 0)
@@ -5649,6 +5733,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 151.13) (xy 88.9 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b644f033-4605-4191-a5ac-cea5827993b1")
+	)
+	(wire
+		(pts
 			(xy 262.89 109.22) (xy 262.89 113.03)
 		)
 		(stroke
@@ -5809,7 +5903,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 157.48) (xy 91.44 157.48)
+			(xy 71.12 157.48) (xy 88.9 157.48)
 		)
 		(stroke
 			(width 0)
@@ -5956,6 +6050,16 @@
 			(type default)
 		)
 		(uuid "dadf393d-1798-42d5-b27c-815a2026e151")
+	)
+	(wire
+		(pts
+			(xy 86.36 140.97) (xy 60.96 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd997d0c-b7a0-4079-ab93-388ec86a943b")
 	)
 	(wire
 		(pts
@@ -7959,6 +8063,92 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 88.9 147.32 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "4139b03f-3772-4fe0-9c87-67d95eacb904")
+		(property "Reference" "R78"
+			(at 92.964 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4K7"
+			(at 91.186 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 87.122 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 88.9 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 88.9 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25900"
+			(at 88.9 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Rotation Offset" ""
+			(at 88.9 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "17d28c37-a4cf-411e-84e0-6c6cae6054bf")
+		)
+		(pin "2"
+			(uuid "25c2fcb5-6ab9-4a84-b417-31b90c62ebf2")
+		)
+		(instances
+			(project "shield"
+				(path "/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/b15cbb63-0434-4f0a-85e4-7f3e94e11f27"
+					(reference "R78")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Jumper:SolderJumper_2_Bridged")
 		(at 172.72 102.87 0)
 		(mirror x)
@@ -8056,7 +8246,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "StemmaQt"
 			(at 105.41 158.115 0)
 			(effects
 				(font
@@ -8485,6 +8675,91 @@
 			(project "shield"
 				(path "/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/b15cbb63-0434-4f0a-85e4-7f3e94e11f27"
 					(reference "#PWR0102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 86.36 147.32 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "63ea79db-8c5d-429d-8e8a-d84fce8efafc")
+		(property "Reference" "R77"
+			(at 82.55 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4K7"
+			(at 84.328 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 88.138 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 86.36 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 86.36 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25900"
+			(at 86.36 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Rotation Offset" ""
+			(at 86.36 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "216d0acd-9704-4d34-9119-c2852b9b831f")
+		)
+		(pin "2"
+			(uuid "a604d29d-9d66-4b2a-8248-2b228ac8f4b6")
+		)
+		(instances
+			(project "shield"
+				(path "/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/b15cbb63-0434-4f0a-85e4-7f3e94e11f27"
+					(reference "R77")
 					(unit 1)
 				)
 			)
@@ -9806,7 +10081,7 @@
 				)
 			)
 		)
-		(property "Value" "150K"
+		(property "Value" "100K"
 			(at 187.706 46.99 90)
 			(effects
 				(font
@@ -9841,7 +10116,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C22807"
+		(property "LCSC" "C23162"
 			(at 185.42 46.99 90)
 			(effects
 				(font
@@ -10285,7 +10560,7 @@
 				)
 			)
 		)
-		(property "Value" "USB_C_Receptacle_USB2.0_14P"
+		(property "Value" "USB_C_Receptacle_USB2.0_16P"
 			(at 34.29 20.32 0)
 			(effects
 				(font

@@ -724,10 +724,28 @@
 		(uuid "a5f1457b-cd5c-4a3d-8462-e94420b19469")
 	)
 	(junction
+		(at 148.59 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2fd5efc3-f20b-4414-a414-5fde316cab65")
+	)
+	(junction
 		(at 201.93 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3f687970-de1b-4211-a727-002aeb085f45")
+	)
+	(junction
+		(at 146.05 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6a998240-cbc8-4587-bed4-dbdf53b4cada")
+	)
+	(junction
+		(at 146.05 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6b49f6a5-345e-439a-8d09-af274b19cf6a")
 	)
 	(bus_entry
 		(at 91.44 146.05)
@@ -847,7 +865,7 @@
 		(uuid "56c1d35b-3762-4d89-a0e8-07aecc84d27f")
 	)
 	(bus_entry
-		(at 104.14 107.95)
+		(at 149.86 107.95)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -856,7 +874,7 @@
 		(uuid "5e985c4e-a6e5-4cb4-8df6-eecad9f7865a")
 	)
 	(bus_entry
-		(at 104.14 110.49)
+		(at 149.86 110.49)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -1163,7 +1181,7 @@
 	)
 	(bus
 		(pts
-			(xy 106.68 110.49) (xy 106.68 113.03)
+			(xy 152.4 110.49) (xy 152.4 113.03)
 		)
 		(stroke
 			(width 0)
@@ -1203,7 +1221,7 @@
 	)
 	(bus
 		(pts
-			(xy 106.68 114.3) (xy 109.22 114.3)
+			(xy 152.4 114.3) (xy 154.94 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1471,6 +1489,26 @@
 		)
 		(uuid "5c77959f-be89-43fe-9a65-3025eeb4c710")
 	)
+	(wire
+		(pts
+			(xy 148.59 110.49) (xy 149.86 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cbaf99f-0110-4562-af38-7d55f320350c")
+	)
+	(wire
+		(pts
+			(xy 146.05 104.14) (xy 146.05 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f44a03f-66b6-423e-b93d-09b49a547e6a")
+	)
 	(bus
 		(pts
 			(xy 195.58 49.53) (xy 180.34 49.53)
@@ -1483,7 +1521,17 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 107.95) (xy 104.14 107.95)
+			(xy 146.05 93.98) (xy 146.05 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62dfe78f-ff15-4f78-8e68-8650f3b97d23")
+	)
+	(wire
+		(pts
+			(xy 83.82 107.95) (xy 146.05 107.95)
 		)
 		(stroke
 			(width 0)
@@ -1523,7 +1571,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 110.49) (xy 104.14 110.49)
+			(xy 83.82 110.49) (xy 148.59 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1560,6 +1608,16 @@
 			(type default)
 		)
 		(uuid "7587f8d7-f60a-404b-a23e-614272d398a2")
+	)
+	(wire
+		(pts
+			(xy 148.59 95.25) (xy 146.05 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77055ce6-3d9a-422b-88d1-72134a7d1944")
 	)
 	(wire
 		(pts
@@ -1660,6 +1718,16 @@
 			(type default)
 		)
 		(uuid "88c89c75-f243-4da6-9d04-877ad253fb25")
+	)
+	(wire
+		(pts
+			(xy 148.59 96.52) (xy 148.59 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89192dff-3c78-4b5a-87d1-74ed7e281b21")
 	)
 	(wire
 		(pts
@@ -1813,7 +1881,7 @@
 	)
 	(bus
 		(pts
-			(xy 106.68 113.03) (xy 106.68 114.3)
+			(xy 152.4 113.03) (xy 152.4 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1900,6 +1968,16 @@
 			(type default)
 		)
 		(uuid "c644830b-2890-48ba-a945-4770b4d025b0")
+	)
+	(wire
+		(pts
+			(xy 146.05 95.25) (xy 146.05 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6594762-6a8f-4421-a570-180a0ef11e0c")
 	)
 	(wire
 		(pts
@@ -2133,6 +2211,16 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 104.14) (xy 148.59 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f69c6b00-464e-4176-a422-4cd5cbfe3ece")
+	)
+	(wire
+		(pts
 			(xy 88.9 31.75) (xy 83.82 31.75)
 		)
 		(stroke
@@ -2160,6 +2248,16 @@
 			(type default)
 		)
 		(uuid "fac0891c-ccf4-44a6-92f8-99781e8ea623")
+	)
+	(wire
+		(pts
+			(xy 146.05 107.95) (xy 149.86 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb956e7f-5101-4843-a767-3db60624c104")
 	)
 	(wire
 		(pts
@@ -2851,7 +2949,7 @@
 	)
 	(hierarchical_label "I2C{SDA SCL}"
 		(shape bidirectional)
-		(at 109.22 114.3 0)
+		(at 154.94 114.3 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3065,7 +3163,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "StemmaQt"
 			(at 208.28 88.265 0)
 			(effects
 				(font
@@ -3138,6 +3236,72 @@
 			(project "shield"
 				(path "/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/de4fc8df-fb7f-4954-9b2d-5ee66af83c26"
 					(reference "U17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 146.05 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8129703a-3c2e-4236-9f45-f7ed3c2f812c")
+		(property "Reference" "#PWR092"
+			(at 146.05 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 146.05 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 146.05 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 146.05 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 146.05 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "207962ee-692f-4cc0-a807-afa8ade0c5e3")
+		)
+		(instances
+			(project "shield"
+				(path "/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/de4fc8df-fb7f-4954-9b2d-5ee66af83c26"
+					(reference "#PWR092")
 					(unit 1)
 				)
 			)
@@ -3289,6 +3453,92 @@
 			(project "shield"
 				(path "/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/de4fc8df-fb7f-4954-9b2d-5ee66af83c26"
 					(reference "R53")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 148.59 100.33 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b891d854-450c-46bb-867f-ba35f4adbd85")
+		(property "Reference" "R76"
+			(at 154.94 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4K7"
+			(at 152.4 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 146.812 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 148.59 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 148.59 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25900"
+			(at 148.59 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Rotation Offset" ""
+			(at 148.59 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9d6aef1c-52c0-43f6-989a-c1a1e11a0abb")
+		)
+		(pin "2"
+			(uuid "205cf790-80f4-4764-8935-a69f521f227f")
+		)
+		(instances
+			(project "shield"
+				(path "/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/de4fc8df-fb7f-4954-9b2d-5ee66af83c26"
+					(reference "R76")
 					(unit 1)
 				)
 			)
@@ -3641,6 +3891,91 @@
 			(project "shield"
 				(path "/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/de4fc8df-fb7f-4954-9b2d-5ee66af83c26"
 					(reference "R93")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 146.05 100.33 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f78cbd25-eeac-4ffd-9a9d-b72358d0efaa")
+		(property "Reference" "R75"
+			(at 139.7 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4K7"
+			(at 142.24 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 147.828 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 146.05 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 146.05 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25900"
+			(at 146.05 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Rotation Offset" ""
+			(at 146.05 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ac0e34f7-21af-4ecb-9e42-811483f80c60")
+		)
+		(pin "2"
+			(uuid "94e0b82b-0adc-42f5-b104-72986fe1552c")
+		)
+		(instances
+			(project "shield"
+				(path "/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/de4fc8df-fb7f-4954-9b2d-5ee66af83c26"
+					(reference "R75")
 					(unit 1)
 				)
 			)

@@ -3476,7 +3476,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "StemmaQt"
 			(at 185.42 70.485 0)
 			(effects
 				(font
