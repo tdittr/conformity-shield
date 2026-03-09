@@ -347,7 +347,7 @@ pub struct NamedPin<P: Naming>(pub P);
 
 impl<P: Naming> defmt::Format for NamedPin<P> {
     fn format(&self, fmt: defmt::Formatter) {
-        defmt::write!(fmt, "{} (Pin {})", self.0.name(), self.0.pin())
+        defmt::write!(fmt, "{} (Pin {})", self.0.name(), self.0.number())
     }
 }
 
@@ -404,11 +404,12 @@ pub enum PinName {
     reset = 32,
 }
 
-pub trait Naming: Pin {
+pub trait Naming {
     fn name(&self) -> PinName;
+    fn number(&self) -> u8;
 }
 
-impl<P: Pin> Naming for P {
+impl<P: Pin> Naming for &P {
     fn name(&self) -> PinName {
         match self.pin() {
             16 => PinName::usb_host_en,
@@ -461,5 +462,9 @@ impl<P: Pin> Naming for P {
             32 => PinName::reset,
             _ => defmt::unreachable!(),
         }
+    }
+
+    fn number(&self) -> u8 {
+        self.pin()
     }
 }
