@@ -1,0 +1,14 @@
+{
+  "languages": {
+    "Rust": {
+      "inlay_hints": {
+        "enabled": true,
+      },
+    },
+  },
+  "lsp": {
+    "rust-analyzer": {
+      "initialization_options": { "cargo": { "allTargets": false } },
+    },
+  },
+}
