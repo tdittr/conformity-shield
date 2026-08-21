@@ -3012,7 +3012,7 @@
 			(uuid "d13ab465-e339-45df-8029-386d019e3328")
 		)
 		(instances
-			(project ""
+			(project "shield"
 				(path "/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/47b780ba-46a2-431c-9095-9b4236a14243"
 					(reference "#FLG4")
 					(unit 1)

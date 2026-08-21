@@ -3448,7 +3448,7 @@
 			(uuid "cae8faf1-3ba8-44d1-9924-db46a13bd8ea")
 		)
 		(instances
-			(project ""
+			(project "shield"
 				(path "/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/ce01c31c-0a05-4934-b06b-b7f15c47d0f2"
 					(reference "J7")
 					(unit 1)
@@ -4384,7 +4384,7 @@
 			(uuid "99fcc1a1-d3f2-4bef-bfa6-384e4449a03a")
 		)
 		(instances
-			(project ""
+			(project "shield"
 				(path "/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/ce01c31c-0a05-4934-b06b-b7f15c47d0f2"
 					(reference "#PWR79")
 					(unit 1)

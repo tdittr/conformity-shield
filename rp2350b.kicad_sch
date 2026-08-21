@@ -8782,7 +8782,7 @@
 			(uuid "73cb7942-b3c3-4755-9754-0416201cce97")
 		)
 		(instances
-			(project ""
+			(project "shield"
 				(path "/d57ea000-ef46-42c0-b86a-7e6b1d4431c2/ce01c31c-0a05-4934-b06b-b7f15c47d0f2/58770360-2665-476d-9733-cefd49f3a585"
 					(reference "#FLG6")
 					(unit 1)
